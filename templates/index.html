@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% block title %} Home{% endblock title %} 
+{% block body %}
+
+    <div class="container my-3" id="container">
+        <h2 class="text-center">Please Provide Weather Data of your Home</h2> 
+        <form action="/" method="POST">
+           <!-- kitchen -->
+            <div class="row mb-3">
+                <label class="mb-3">Kitchen Data</label>
+                <div class="col-sm">
+                    <input type="text" class="form-control" name="Kitchen_temp" placeholder="Kitchen Temperature" required>
+                </div>
+                <div class="col-sm">
+                    <input type="text" class="form-control" name="Kitchen_humidty" placeholder="Kitchen Humidity" required>
+                </div>
+            </div>
+            <!-- Living Room-->
+            <div class="row mb-3">
+                <label class="mb-3">Living Room Data</label>
+                <div class="col-sm">
+                    <input type="text" class="form-control" name="Livroom_temp" placeholder="Living Room Temperature" required>
+                </div>
+                <div class="col-sm">
+                    <input type="text" class="form-control" name="Livroom_humidity" placeholder="Living Room Humidity" required>
+                </div>
+            </div>
+            <!-- Laundary -->
+            <div class="row mb-3">
+                <label class="mb-3">Laundary Room Data</label>
+                <div class="col-sm">
+                    <input type="text" class="form-control" name="Laundry_temp" placeholder="Laundary Room Temperature" required>
+                </div>
+                <div class="col-sm">
+                    <input type="text" class="form-control" name="Laundry_humidity" placeholder="Laundary Room Humidity" required>
+                </div>
+            </div>
+            <!-- Office -->
+            <div class="row mb-3">
+                <label class="mb-3">Office Room Data</label>
+                <div class="col-sm">
+                    <input type="text" class="form-control" name="Office_temp" placeholder="Office Room Temperature" required>
+                </div>
+                <div class="col-sm">
+                    <input type="text" class="form-control" name="Office_humidity" placeholder="Office Room Humidity" required>
+                </div>
+            </div>
+            <!-- Bathroom -->
+            <div class="row mb-3">
+                <label class="mb-3">Bathroom Data</label>
+                <div class="col-sm">
+                    <input type="text" class="form-control" name="Bathroom_temp" placeholder="Bathroom Temperature" required>
+                </div>
+                <div class="col-sm">
+                    <input type="text" class="form-control" name="Bathroom_humidity" placeholder="Bathroom Humidity" required>
+                </div>
+            </div>
+            <!-- Ironing -->
+            <div class="row mb-3">
+                <label class="mb-3">Ironing Room Data</label>
+                <div class="col-sm">
+                    <input type="text" class="form-control" name="Ironing_temp" placeholder="Ironing Room Temperature" required>
+                </div>
+                <div class="col-sm">
+                    <input type="text" class="form-control" name="Ironing_humidity" placeholder="Ironing Room Humidity" required>
+                </div>
+            </div>
+            <!-- Teenager Room -->
+            <div class="row mb-3">
+                <label class="mb-3">Teenager Room Data</label>
+                <div class="col-sm">
+                    <input type="text" class="form-control" name="TeenRoom_temp" placeholder="Teenager Room Temperature" required>
+                </div>
+                <div class="col-sm">
+                    <input type="text" class="form-control" name="TeenRoom_humidity" placeholder="Teenager Room Humidity" required>
+                </div>
+            </div>
+            <!-- Parent Room -->
+            <div class="row mb-3">
+                <label class="mb-3">Parent Room Data</label>
+                <div class="col-sm">
+                    <input type="text" class="form-control" name="ParentRoom_temp" placeholder="Parent Room Temperature" required>
+                </div>
+                <div class="col-sm">
+                    <input type="text" class="form-control" name="ParentRoom_humidity" placeholder="Parent Room Humidity" required>
+                </div>
+            </div>
+            <!-- Outside -->
+            <div class="row mb-3">
+                <label class="mb-3">Outside Data</label>
+                <div class="col-sm">
+                    <input type="text" class="form-control" name="Outside_temp" placeholder="Outside Temperature" required>
+                </div>
+                <div class="col-sm">
+                    <input type="text" class="form-control" name="Outside_humidity" placeholder="Outside Humidity" required>
+                </div>
+                <div class="col-sm">
+                    <input type="text" class="form-control" name="Outside_dewpoint" placeholder="Outside Dewpoint" required>
+                </div>
+                <div class="col-sm">
+                    <input type="text" class="form-control" name="Outside_pressure" placeholder="Outside Pressure" required>
+                </div>
+                <div class="col-sm">
+                    <input type="text" class="form-control" name="Outside_windspeed" placeholder="Outside Windspeed" required>
+                </div>
+            </div>
+            <div id="btndiv"><button type="submit" class="btn btn-dark" id="btn">Submit</button></div>
+          </form>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+
+{% endblock body %}
